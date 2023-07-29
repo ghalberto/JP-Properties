@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+    
+}
+img{
+    max-width: 90%;
+}
+
+body{
+   
+    min-height: 100vh;
+    min-width:  100vw;;
+    background-image: url(./CSS/img/coach.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+   
+    /*background-attachment: fixed;*/
+}
+
+
+.header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: space-between;
+    top: 30px;
+}
+.logo{
+    position: absolute;
+    width: 250px;
+    top: 20px;
+    margin-left: 20px;
+    
+}
+
+
+.nav{
+    
+    position: absolute;
+    right: 25px;
+    top: 30px;
+}
+
+.nav ul{
+    display: flex;
+    font-size: 40px;
+    list-style: none;
+    
+    
+}
+
+
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(247, 238, 225);
+    margin: 15px;
+    transition: border-bottom 0.5s;
+
+}
+
+.nav ul li a:hover{
+    
+    border-bottom: 2px solid  rgb(254, 198, 119);
+   
+}
+
+.moto{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    bottom: 30px;
+    /*border: 2px solid red;*/
+    
+    
+    
+}
+.text{
+    position: absolute;
+    color: rgb(247, 238, 225);
+    left: 80px;
+    font-size: 40px;
+}
+
+
+/*CSS for listing.html */
+
+.nav-responsive{
+    display: none;
+}
+
+
+/*Responsive desing*/
+
+
+@media screen and (max-width: 1040px) {
+    .header{
+        display: none;
+    }
+   
+    
+    .nav-responsive{
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        margin-right: 20px;
+        margin-top: 30px;
+        
+    }
+
+    .nav-responsive ul{  
+        
+        font-size: 25px;
+        letter-spacing: 4px;
+        list-style: none;
+        
+    }
+    .nav-responsive ul li{
+        margin-top: 35px;
+        
+        
+    }
+    
+     
+    .nav-responsive ul li a{
+       
+        text-decoration: none;
+        color: rgb(247, 238, 225);
+        transition: all 0.3s;
+      
+        
+    }
+
+    .nav-responsive ul li a:hover{
+        border-bottom: 1px solid  rgb(254, 219, 131);
+        padding-bottom: 5px;
+    }
+
+ 
+   /*Moto*/
+
+    .moto{
+        position: absolute;
+    
+    }
+   .text{
+      position: absolute;
+      font-size: 25px;
+      left: 30px;
+      bottom: 20px;
+    
+    }
+    
+    body{
+        min-height: 100vh;
+        background-image: url(./CSS/img/coach.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    
+}
+
+
