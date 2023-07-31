@@ -16,7 +16,7 @@ body{
    
     min-height: 100vh;
     min-width:  100vw;;
-    background-image: url(./CSS/img/coach.jpg);
+    background-image: url(./coach.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -160,7 +160,7 @@ body{
     
     body{
         min-height: 100vh;
-        background-image: url(./CSS/img/coach.jpg);
+        background-image: url(./coach.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
